@@ -5,8 +5,9 @@ import UserListRow from "../Components/UserListRow";
 
 function App() {
   return (
-      <Navbar />
+      <UserListRow user = { {name: "Craig Hansen", email: "chansen@example.com", position: "Software Developer", department: "Foo Bar", localization: "Lorem Ipsum", sent: 4, finished: 2} } />
   );
 }
 
 export default App;
+
