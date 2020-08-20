@@ -2,8 +2,8 @@ import React from "react";
 
 function Navbar() {
     return(
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand">Online Onboarding</a>
+        <nav className="navbar navbar-expand-lg d-flex justify-content-center navbar-light bg-light">
+            <a className="navbar-brand col-2 ml-4">Online Onboarding</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -30,17 +30,17 @@ function Navbar() {
                         </div>
                     </li>
                 </ul>
-                    <div className="my-2 my-lg-0 col-6 p-0">
-                        <form className="form-inline">
-                            <input className="form-control mr-sm-2 col-9" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-outline-success my-2 my-sm-0 col-2 float-left" type="submit">Search</button>
-                        </form>
+                <div className="my-2 my-lg-0 col-6 p-0">
+                    <form className="form-inline">
+                        <input className="form-control mr-sm-2 col-9" type="search" placeholder="Search" aria-label="Search"/>
+                        <button className="btn btn-outline-success my-2 my-sm-0 col-2 float-left" type="submit">Search</button>
+                    </form>
+                </div>
+                <div className="mr-4 float-right">
+                    <div className="form-inline my-2 my-lg-0">
+                        <p><em>Witaj #login</em></p>
                     </div>
-                    <div className="ml-4">
-                        <div className="form-inline my-2 my-lg-0">
-                            <p><em>Witaj #login</em></p>
-                        </div>
-                    </div>
+                </div>
             </div>
         </nav>
     )
