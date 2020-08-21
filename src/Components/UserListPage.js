@@ -6,6 +6,7 @@ import "../static/looper/stylesheets/theme.min.css";
 import Navbar from "../Components/Navbar";
 import UsersList from "./UsersList"
 import LeftMenu from "./LeftMenu";
+import PageAddressBar from "./PageAddressBar"
 
 function UserListPage() {
 	const singleUser = {name: "Craig Hansen", email: "chansen@example.com", position: "Software Developer", department: "Foo Bar", localization: "Lorem Ipsum", sent: 4, finished: 2};
@@ -23,20 +24,7 @@ function UserListPage() {
 			<main className="app-main">
 				<div className="wrapper"><div className="page">
 					<div className="page-inner">
-						<header className="page-title-bar">
-							<div className="card card-fluid">
-								<div className="card-body">
-									<h4 className="card-title">  </h4>
-									<hr />
-									<ol className="breadcrumb">
-										<li className="breadcrumb-item">
-											<a href="#">Home</a>
-										</li>
-										<li className="breadcrumb-item active">Accounts</li>
-									</ol>
-								</div>
-							</div>
-						</header>
+						<PageAddressBar page = { "Accounts" } />
 
 						<UsersList users = { allUsers } />
 					</div>
