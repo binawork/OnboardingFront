@@ -4,15 +4,14 @@ import "../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 
 import Navbar from "../Components/Navbar";
-import UserListRow from "./UserListRow";
-import UserListSearch from "./UserListSearch";
+import UsersList from "./UsersList"
 import LeftMenu from "./LeftMenu";
 
 function UserListPage() {
 	const singleUser = {name: "Craig Hansen", email: "chansen@example.com", position: "Software Developer", department: "Foo Bar", localization: "Lorem Ipsum", sent: 4, finished: 2};
-	var users = [], i;
+	var allUsers = [], i;
 	for(i = 0; i < 5; i++){
-		users.push(<UserListRow user = { singleUser } />);
+		allUsers.push(singleUser);
 	}
 
     return(
@@ -24,7 +23,7 @@ function UserListPage() {
 			<main className="app-main">
 				<div className="wrapper"><div className="page">
 					<div className="page-inner">
-						<header class="page-title-bar">
+						<header className="page-title-bar">
 							<div className="card card-fluid">
 								<div className="card-body">
 									<h4 className="card-title">  </h4>
@@ -39,19 +38,7 @@ function UserListPage() {
 							</div>
 						</header>
 
-						<div className="page-section">
-							<div className="card card-fluid">
-								<div className="card-header">
-									Employees list
-								</div>
-								<div className="card-body">
-									<UserListSearch />
-								</div>
-								<div className="card-body">
-									{ users }
-								</div>
-							</div>
-						</div>
+						<UsersList users = { allUsers } />
 					</div>
 				</div></div>
 		    </main>
