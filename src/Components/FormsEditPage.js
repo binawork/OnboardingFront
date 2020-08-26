@@ -9,6 +9,7 @@ import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar";
 import FormOpenAnswer from "./FormOpenAnswer";
 import FormChoiceAnswer from "./FormChoiceAnswer";
+import FormMultiChoiceAnswer from "./FormMultiChoiceAnswer";
 
 function FormsEditPage() {
 
@@ -65,6 +66,10 @@ function FormsEditPage() {
 
     							<div className="card-body">
     								<FormChoiceAnswer /> {/* placeholder */}
+    							</div>
+
+    							<div className="card-body">
+    								<FormMultiChoiceAnswer /> {/* placeholder */}
     							</div>
     						</div>
     					</div>
