@@ -8,6 +8,7 @@ import Navbar from "../Components/Navbar";
 import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar";
 import FormOpenAnswer from "./FormOpenAnswer";
+import FormChoiceAnswer from "./FormChoiceAnswer";
 
 function FormsEditPage() {
 
@@ -60,6 +61,10 @@ function FormsEditPage() {
     							</div>
     							<div className="card-body">
     								<FormOpenAnswer /> {/* placeholder */}
+    							</div>
+
+    							<div className="card-body">
+    								<FormChoiceAnswer /> {/* placeholder */}
     							</div>
     						</div>
     					</div>

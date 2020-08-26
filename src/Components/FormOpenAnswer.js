@@ -16,18 +16,17 @@ function FormOpenAnswer() {
                   <form> {/* form placeholder */}
                     <div className="form-group">
                         <div className="input-group">
-                            <input type="text" className="form-control" placeholder="Enter new Page name" value="" />
+                            <input type="text" className="form-control" placeholder="Title" value="" />
                         </div>
                     </div>
                     <div className="form-group">
-                        <textarea className="form-control" placeholder="Description" rows="4"></textarea>
+                        <textarea className="form-control" placeholder="Description (markdown)" rows="4"></textarea>
                     </div>
                     <hr />
                     <div className="form-group">
-                        <textarea className="form-control" placeholder="Description" rows="4"></textarea>
+                        <textarea className="form-control" placeholder="User answer (plain text)" rows="4"></textarea>
                     </div>
                   </form>
-                  Form 1<br /><i className="fa fa-arrows">&#10018;</i>
               </div>
               <div className="card-footer align-items-center">
 
