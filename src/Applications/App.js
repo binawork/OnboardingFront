@@ -9,7 +9,7 @@ import DashboardPage from "../Components/DashboardPage";
 
 function App() {
   return (
-      <UserListPage />
+      <DashboardPage />
   );
 }
 
