@@ -10,6 +10,7 @@ import PageAddressBar from "./PageAddressBar";
 import FormOpenAnswer from "./FormOpenAnswer";
 import FormChoiceAnswer from "./FormChoiceAnswer";
 import FormMultiChoiceAnswer from "./FormMultiChoiceAnswer";
+import FormAddSection from "./FormAddSection";
 
 function FormsEditPage() {
 
@@ -74,6 +75,9 @@ function FormsEditPage() {
     						</div>
     					</div>
 
+    					<div className="page-section">
+    						<FormAddSection />
+    					</div>
     				</div>
     			</div></div>
     		</main>
