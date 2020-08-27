@@ -61,22 +61,27 @@ function FormsEditPage() {
     							<div className="card-header">
     							Sekcje strony
     							</div>
-    							<div className="card-body">
-    								<FormOpenAnswer /> {/* placeholder */}
-    							</div>
+    							<div className="row">
+    								<div className="col">
+    									<div className="card-body">
+    										<FormOpenAnswer /> {/* placeholder */}
+    									</div>
 
-    							<div className="card-body">
-    								<FormChoiceAnswer /> {/* placeholder */}
-    							</div>
+    									<div className="card-body">
+    										<FormChoiceAnswer /> {/* placeholder */}
+    									</div>
 
-    							<div className="card-body">
-    								<FormMultiChoiceAnswer /> {/* placeholder */}
+    									<div className="card-body">
+    										<FormMultiChoiceAnswer /> {/* placeholder */}
+    									</div>
+    								</div>
+    								<div className="col-auto">
+    									<div className="card-body">
+    										<FormAddSection />
+    									</div>
+    								</div>
     							</div>
     						</div>
-    					</div>
-
-    					<div className="page-section">
-    						<FormAddSection />
     					</div>
     				</div>
     			</div></div>
