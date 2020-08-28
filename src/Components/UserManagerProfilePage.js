@@ -24,15 +24,13 @@ function UserManagerProfilePage() {
     					<div className="page-section">
     						<div className="card card-fluid">
     							<div className="card-header">View content</div>
-    							<div className="row">
+    							<div className="row"> {/* placeholder */}
     								<div className="col">
-    									<div className="card-body">
-											<div className="form-group"> {/* placeholder */}
-												<div className="custom-file">
-													<label for="docFile">New photo </label>
-													<input type="file" id="docFile" accept="image/*" multiple="" />
-												</div>
-											</div>
+    									<div className="card-body align-items-center text-center">
+    										<div className="user-avatar user-avatar-xl fileinput-button">
+    											<div className="fileinput-button-label"> Change photo </div><img src={process.env.PUBLIC_URL+"/images/unknown-profile.jpg"} alt="" />
+    											<input id="fileupload-avatar" type="file" name="avatar" />
+    										</div>
     									</div>
     								</div>
 

@@ -25,6 +25,31 @@ function UserProfileManage() {
                     <input type="email" className="form-control" placeholder="e-mail" value="" />
                 </div>
             </div>
+            <div className="form-group">
+                <div className="input-group">
+                    <input type="tel" className="form-control" placeholder="phone number" value="" />
+                </div>
+            </div>
+            <div className="form-group">
+                <div className="input-group">
+                    <input type="text" className="form-control" placeholder="team" value="" />
+                </div>
+            </div>
+            <div className="form-group">
+                <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Localization" value="" />
+                </div>
+            </div>
+            <div className="form-group">
+                <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Position/stanowisko" value="" />
+                </div>
+            </div>
+            <div className="form-group">
+				<div className="input-group-append">
+					<button className="btn btn-secondary" style={{color: '#000'}}>Register new user</button>
+				</div>
+			</div>
         </form>
       </div>
     );
