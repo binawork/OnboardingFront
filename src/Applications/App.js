@@ -10,7 +10,7 @@ import AddUserTablePage from "../Components/AddUserTable/AddUserTablePage";
 
 function App() {
   return (
-      <AddUserTablePage />
+      <UserListPage />
   );
 }
 
