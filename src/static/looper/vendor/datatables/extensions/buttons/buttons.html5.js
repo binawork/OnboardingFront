@@ -1172,7 +1172,7 @@ DataTable.ext.buttons.excelHtml5 = {
 		}
 
 
-		// Table itself
+		// FormTable itself
 		if ( config.header ) {
 			addRow( data.header, rowPos );
 			$('row:last c', rels).attr( 's', '2' ); // bold

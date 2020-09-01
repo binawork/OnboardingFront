@@ -3473,7 +3473,7 @@
 		}
 		else
 		{
-			/* Table is empty - create a row with an empty message in it */
+			/* FormTable is empty - create a row with an empty message in it */
 			var sZero = oLang.sZeroRecords;
 			if ( oSettings.iDraw == 1 &&  _fnDataSource( oSettings ) == 'ajax' )
 			{
@@ -3658,7 +3658,7 @@
 			}
 			else if ( cOption == 't' )
 			{
-				/* Table */
+				/* FormTable */
 				featureNode = _fnFeatureHtmlTable( oSettings );
 			}
 			else if ( cOption ==  'i' && features.bInfo )
@@ -4610,7 +4610,7 @@
 				.attr( 'role', 'status' )
 				.attr( 'aria-live', 'polite' );
 	
-			// Table is described by our info div
+			// FormTable is described by our info div
 			$(settings.nTable).attr( 'aria-describedby', tid+'_info' );
 		}
 	
@@ -5635,7 +5635,7 @@
 			// duplicated in the dom (radio elements for example)
 			$('[name]', tmpTable).removeAttr('name');
 	
-			// Table has been built, attach to the document so we can work with it.
+			// FormTable has been built, attach to the document so we can work with it.
 			// A holding element is used, positioned at the top of the container
 			// with minimal height, so it has no effect on if the container scrolls
 			// or not. Otherwise it might trigger scrolling when it actually isn't
@@ -6803,7 +6803,7 @@
 			return [ mixed ];
 		}
 		else if ( mixed.nodeName && mixed.nodeName.toLowerCase() === 'table' ) {
-			// Table node
+			// FormTable node
 			idx = $.inArray( mixed, tables );
 			return idx !== -1 ? [ settings[idx] ] : null;
 		}
@@ -8327,7 +8327,7 @@
 				}
 			} );
 	
-			// Table destroyed - nuke any child rows
+			// FormTable destroyed - nuke any child rows
 			api.on( destroyEvent, function ( e, ctx ) {
 				if ( settings !== ctx ) {
 					return;
@@ -9188,7 +9188,7 @@
 	/**
 	 * Check if a `<table>` node is a DataTable table already or not.
 	 *
-	 *  @param {node|jquery|string} table Table node, jQuery object or jQuery
+	 *  @param {node|jquery|string} table FormTable node, jQuery object or jQuery
 	 *      selector for the table to test. Note that if more than more than one
 	 *      table is passed on, only the first will be checked
 	 *  @returns {boolean} true the table given is a DataTable, or false otherwise
@@ -13008,7 +13008,7 @@
 			"bFilter": null,
 	
 			/**
-			 * Table information element (the 'Showing x of y records' div) enable
+			 * FormTable information element (the 'Showing x of y records' div) enable
 			 * flag.
 			 * Note that this parameter will be set by the initialisation routine. To
 			 * set a default use {@link DataTable.defaults}.

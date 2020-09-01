@@ -5,10 +5,12 @@ import Navbar from "../Components/Navbar";
 //import UserListRow from "../Components/UsersList/UserListRow";
 //import UserListSearch from "../Components/UserListSearch";
 import UserListPage from "../Components/UsersList/UserListPage";
+import FormTablePage from "../Components/FormTable/FormTablePage";
+import AddUserTablePage from "../Components/AddUserTable/AddUserTablePage";
 
 function App() {
   return (
-      <UserListPage />
+      <AddUserTablePage />
   );
 }
 
