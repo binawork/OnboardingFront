@@ -1,11 +1,11 @@
 import React from "react";
 
-function FormTableRow(row) {
+function FormTableRow(props) {
     return(
         <tr>
-            <td>{row.name}</td>
-            <td>{row.order}</td>
-            <td>{row.last_edit}</td>
+            <td>{props.row.name}</td>
+            <td>{props.row.order}</td>
+            <td>{props.row.last_edit}</td>
             <td>edit/delete/stats</td>
         </tr>
     )

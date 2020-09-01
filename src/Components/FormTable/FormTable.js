@@ -4,7 +4,13 @@ import FormTableAddNew from "./FormTableAddNew";
 import FormTableRow from "./FormTableRow";
 import { formDataList } from "./FormTableData";
 
-function FormTable(props) {
+function FormTable() {
+    let form_table= [];
+    if (formDataList) {
+        formDataList.forEach(function (element) {
+            form_table.push(<FormTableRow row={element}/>)
+        });
+    }
     return(
         <div className="page-section">
             <div className="card card-fluid">
@@ -31,12 +37,7 @@ function FormTable(props) {
                         </tr>
                         </thead>
                         <tbody id="form_table_data_container">
-                            {
-                                formDataList.forEach(function (row) {
-                                    if(row)
-                                        FormTableRow(row);
-                                })
-                            }
+                            { form_table }
                         </tbody>
                     </table>
                 </div>
