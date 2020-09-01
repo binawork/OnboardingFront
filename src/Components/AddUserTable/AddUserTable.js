@@ -1,6 +1,7 @@
 import React from "react";
 import { addUserFormTableData } from "./Add_User_Table_Data";
 import AddUserTableRow from "./Add_User_Table_Row";
+import UserListSearch from "../UserListSearch";
 
 function AddUserTable() {
     let user_table = [];
@@ -17,6 +18,7 @@ function AddUserTable() {
                     Lorem Ipsum
                 </div>
                 <div className="card-body">
+                    <UserListSearch />
                 </div>
             </div>
             <div className="card card-fluid">
