@@ -4,7 +4,7 @@ import React from "react";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 
 import UserListRow from "./UserListRow";
-import UserListSearch from "./UserListSearch";
+import UserListSearch from "../UserListSearch";
 
 function UsersList(props) {
     var usersList = [];
