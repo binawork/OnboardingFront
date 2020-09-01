@@ -9,7 +9,7 @@ import FormTablePage from "../Components/FormTable/FormTablePage";
 
 function App() {
   return (
-      <FormTablePage />
+      <AddUserTablePage />
   );
 }
 
