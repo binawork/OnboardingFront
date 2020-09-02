@@ -5,12 +5,19 @@ import "../../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
 function FormOpenAnswer(props) {
+    var title = "Title", descr = "Description (markdown)";
+
+    if(props.form.title)
+    	title = props.form.title;
+    if(props.form.description)
+    	descr = props.form.description;
+
 
     return(
       <div className="task-issue">
           <div className="card">
-              <div className="card-header">Title</div>
-              <div className="card-body">"Description (markdown)"</div>
+              <div className="card-header">{ title }</div>
+              <div className="card-body">{ descr }</div>
 
               <div className="card-body">
                   <form> {/* form placeholder */}

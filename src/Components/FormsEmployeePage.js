@@ -15,11 +15,11 @@ function FormsEmployeePage() {
     var forms = [];
     for(var i = 0; i < formsEmployeeData.length; i++){
     	if(formsEmployeeData[i].type === "oa")
-    		forms.push(<div className="card-body"><FormOpenAnswer form = { formsEmployeeData[i] } key = { i } /></div>);
+    		forms.push(<div className="card-body" key = { i }><FormOpenAnswer form = { formsEmployeeData[i] } /></div>);
     	else if(formsEmployeeData[i].type === "osa")
-    		forms.push(<div className="card-body"><FormChoiceAnswer form = { formsEmployeeData[i] } key = { i } /></div>);
+    		forms.push(<div className="card-body"  key = { i }><FormChoiceAnswer form = { formsEmployeeData[i] } /></div>);
     	else if(formsEmployeeData[i].type === "msa")
-    		forms.push(<div className="card-body"><FormMultiChoiceAnswer form = { formsEmployeeData[i] } key = { i } /></div>);
+    		forms.push(<div className="card-body" key = { i }><FormMultiChoiceAnswer form = { formsEmployeeData[i] } /></div>);
     }
 
     return(

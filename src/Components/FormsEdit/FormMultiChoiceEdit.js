@@ -27,7 +27,7 @@ function FormMultiChoiceEdit() {
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
                                 <div className="custom-control custom-control-inline custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb1" /> <label className="custom-control-label" for="ckb1">Answer One</label>
+                                    <input type="checkbox" className="custom-control-input" id="ckb1" /> <label className="custom-control-label" htmlFor="ckb1">Answer One</label>
                                 </div>
                             </td>
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
@@ -36,7 +36,7 @@ function FormMultiChoiceEdit() {
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
                                 <div className="custom-control custom-control-inline custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb2" checked /> <label className="custom-control-label" for="ckb2">Answer Two</label>
+                                    <input type="checkbox" className="custom-control-input" id="ckb2" checked /> <label className="custom-control-label" htmlFor="ckb2">Answer Two</label>
                                 </div>
                             </td>
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
@@ -45,7 +45,7 @@ function FormMultiChoiceEdit() {
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
                                 <div className="custom-control custom-control-inline custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input is-valid" id="ckb3" /> <label className="custom-control-label" for="ckb3">Answer Three</label>
+                                    <input type="checkbox" className="custom-control-input is-valid" id="ckb3" /> <label className="custom-control-label" htmlFor="ckb3">Answer Three</label>
                                 </div>
                             </td>
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
@@ -54,7 +54,7 @@ function FormMultiChoiceEdit() {
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
                                 <div className="custom-control custom-control-inline custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb4" /> <label className="custom-control-label" for="ckb4">Answer Four</label>
+                                    <input type="checkbox" className="custom-control-input" id="ckb4" /> <label className="custom-control-label" htmlFor="ckb4">Answer Four</label>
                                 </div>
                             </td>
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
