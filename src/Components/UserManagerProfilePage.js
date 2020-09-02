@@ -4,7 +4,7 @@ import "../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 
 import UserProfileManage from "./UserProfileManage";
-import Navbar from "../Components/Navbar";
+import Navbar from "./Navbar";
 import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar"
 
