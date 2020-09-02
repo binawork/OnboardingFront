@@ -1,12 +1,12 @@
 import React from "react";
 
-import "../static/looper/stylesheets/theme.min.css";
+import "../../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 
-import Navbar from "../Components/Navbar";
+import Navbar from "../Navbar";
 import UsersList from "./UsersList"
-import LeftMenu from "./LeftMenu";
-import PageAddressBar from "./PageAddressBar"
+import LeftMenu from "../LeftMenu";
+import PageAddressBar from "../PageAddressBar"
 
 function UserListPage() {
 	const singleUser = {name: "Craig Hansen", email: "chansen@example.com", position: "Software Developer", department: "Foo Bar", localization: "Lorem Ipsum", sent: 4, finished: 2};
