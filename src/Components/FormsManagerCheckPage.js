@@ -4,13 +4,15 @@ import "../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
+import Navbar from "./Navbar";
+import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar";
 import FormOpenAnswer from "./FormsEdit/FormOpenAnswer";
 import FormChoiceAnswer from "./FormsEdit/FormChoiceAnswer";
 import FormMultiChoiceAnswer from "./FormsEdit/FormMultiChoiceAnswer";
 import { formsEmployeeData } from "./FormsEdit/FormsEmployeeData.js";
 
-function FormsEmployeePage() {
+function FormsManagerCheckPage() {
     var forms = [];
     for(var i = 0; i < formsEmployeeData.length; i++){
     	if(formsEmployeeData[i].type === "oa")
@@ -24,10 +26,10 @@ function FormsEmployeePage() {
     return(
     	<div className="app">
     		<header className="app-header app-header-dark">
-    			{/* todo: add employee navbar; */}
+    			<Navbar /> {/* placeholder */}
     		</header>
 
-    		<aside className="app-aside app-aside-expand-md app-aside-light"></aside>
+    		<LeftMenu />
 
     		<main className="app-main">
 				<div className="wrapper"><div className="page has-sidebar-expand-xl">
@@ -51,5 +53,5 @@ function FormsEmployeePage() {
     )
 }
 
-export default FormsEmployeePage;
+export default FormsManagerCheckPage;
 
