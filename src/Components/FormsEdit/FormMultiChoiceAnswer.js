@@ -4,7 +4,40 @@ import "../../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
-function FormMultiChoiceAnswer() {
+function FormMultiChoiceAnswer(props) {
+    var localFormData = {title: "", description: "",
+    		data: {
+				answers: []
+			}
+    	}, valid = false;
+
+    if(props.form){
+    	if(!props.form.type || props.form.type !== "msa")
+    		return <></>;
+
+    	let allValid = 0;
+		if(props.form.title){
+			localFormData.title = props.form.title;
+			allValid++;
+		}
+		if(props.form.description){
+			localFormData.description = props.form.description;
+			allValid++;
+		}
+
+		if(props.form.data)
+			if(props.form.data.answers){
+				localFormData.data.answers = props.form.data.answers;
+				allValid++;
+			}
+
+		if(allValid == 3)
+			valid = true;
+    }
+
+    if(!valid){
+    	return <></>;
+    }
 
     return(
       <div className="task-issue">
@@ -14,36 +47,36 @@ function FormMultiChoiceAnswer() {
 
               <div className="card-body">
                   <form> {/* form placeholder */}
-                    <table className="table table-hover">
+                    <table className="table table-hover"><tbody>
                         <tr>
                             <td>
                                 <div className="custom-control custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb1" /> <label className="custom-control-label" for="ckb1">Answer One</label>
+                                    <input type="checkbox" className="custom-control-input" id="ckb1" /> <label className="custom-control-label" htmlFor="ckb1">Answer One</label>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <div className="custom-control custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb2" checked /> <label className="custom-control-label" for="ckb2">Answer Two</label>
+                                    <input type="checkbox" className="custom-control-input" id="ckb2" checked /> <label className="custom-control-label" htmlFor="ckb2">Answer Two</label>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <div className="custom-control custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input is-valid" id="ckb3" /> <label className="custom-control-label" for="ckb3">Answer Three</label>
+                                    <input type="checkbox" className="custom-control-input is-valid" id="ckb3" /> <label className="custom-control-label" htmlFor="ckb3">Answer Three</label>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <div className="custom-control custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb4" /> <label className="custom-control-label" for="ckb4">Answer Four</label>
+                                    <input type="checkbox" className="custom-control-input" id="ckb4" /> <label className="custom-control-label" htmlFor="ckb4">Answer Four</label>
                                 </div>
                             </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                   </form>
               </div>
           </div>

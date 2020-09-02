@@ -23,7 +23,7 @@ function FormMultiChoiceEdit() {
                         <textarea className="form-control" placeholder="Description (markdown)" rows="4"></textarea>
                     </div>
                     <hr />
-                    <table className="table table-hover">
+                    <table className="table table-hover"><tbody>
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
                                 <div className="custom-control custom-control-inline custom-checkbox">
@@ -60,7 +60,7 @@ function FormMultiChoiceEdit() {
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
                             <td> <a className="btn" href="#"><i className="fa fa-trash-o fa-lg">&#61944;</i> Delete</a> </td>
                         </tr>
-                    </table>
+                    </tbody></table>
                     <hr />
                     <div className="form-group">
                         <div className="input-group-append">

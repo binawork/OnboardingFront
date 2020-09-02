@@ -4,7 +4,7 @@ import "../../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
-function FormOpenAnswer() {
+function FormOpenAnswer(props) {
 
     return(
       <div className="task-issue">
