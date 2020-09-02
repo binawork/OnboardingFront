@@ -8,7 +8,7 @@ import Navbar from "../Components/Navbar";
 import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar"
 
-function UserManagerProfilePage {
+function UserManagerProfilePage() {
 	const singleUser = {name: "Craig Hansen", email: "chansen@example.com", position: "Software Developer", department: "Foo Bar", localization: "Lorem Ipsum", sent: 4, finished: 2};
 	var allUsers = [], i;
 	for(i = 0; i < 5; i++){
