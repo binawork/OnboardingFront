@@ -11,9 +11,11 @@ import FormTablePage from "../Components/FormTable/FormTablePage";
 import AddUserTablePage from "../Components/AddUserTable/AddUserTablePage";
 import UserManagerProfilePage from "../Components/UserManagerProfilePage";
 
+import FormsEmployeePage from "../Components/FormsEmployeePage";
+
 function App() {
   return (
-      <AddUserTablePage />
+      <FormsEmployeePage />
   );
 }
 
