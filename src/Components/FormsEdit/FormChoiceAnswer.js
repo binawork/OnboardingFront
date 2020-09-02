@@ -1,12 +1,12 @@
 import React from "react";
 
-import "../static/looper/stylesheets/theme.min.css";
+import "../../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
-import Switcher from "./Switcher"
+import Switcher from "../Switcher"
 
-function FormMultiChoiceAnswer() {
+function FormChoiceAnswer() {
 
     return(
       <div className="task-issue">
@@ -26,8 +26,8 @@ function FormMultiChoiceAnswer() {
                     <table className="table table-hover">
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
-                                <div className="custom-control custom-control-inline custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb1" /> <label className="custom-control-label" for="ckb1">Answer One</label>
+                                <div className="custom-control custom-control-inline custom-radio">
+                                    <input type="radio" className="custom-control-input" id="rd1" /> <label className="custom-control-label" for="rd1">Answer One</label>
                                 </div>
                             </td>
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
@@ -35,8 +35,8 @@ function FormMultiChoiceAnswer() {
                         </tr>
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
-                                <div className="custom-control custom-control-inline custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb2" checked /> <label className="custom-control-label" for="ckb2">Answer Two</label>
+                                <div className="custom-control custom-control-inline custom-radio">
+                                    <input type="radio" className="custom-control-input" id="rd2" checked  style={{ color:"black" }} /> <label className="custom-control-label" for="rd2">Answer Two</label>
                                 </div>
                             </td>
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
@@ -44,8 +44,8 @@ function FormMultiChoiceAnswer() {
                         </tr>
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
-                                <div className="custom-control custom-control-inline custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input is-valid" id="ckb3" /> <label className="custom-control-label" for="ckb3">Answer Three</label>
+                                <div className="custom-control custom-control-inline custom-radio">
+                                    <input type="radio" className="custom-control-input is-valid" id="rd3" style={{ color:"black" }} /> <label className="custom-control-label" for="rd3">Answer Three</label>
                                 </div>
                             </td>
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
@@ -53,8 +53,8 @@ function FormMultiChoiceAnswer() {
                         </tr>
                         <tr><td><i className="fa fa-arrows">&#10018;</i></td>
                             <td>
-                                <div className="custom-control custom-control-inline custom-checkbox">
-                                    <input type="checkbox" className="custom-control-input" id="ckb4" /> <label className="custom-control-label" for="ckb4">Answer Four</label>
+                                <div className="custom-control custom-control-inline custom-radio">
+                                    <input type="radio" className="custom-control-input" id="rd4" /> <label className="custom-control-label" for="rd4">Answer Four</label>
                                 </div>
                             </td>
                             <td> <a className="btn" href="#">&#9997; Edit</a> </td>
@@ -88,5 +88,5 @@ function FormMultiChoiceAnswer() {
     )
 }
 
-export default FormMultiChoiceAnswer;
+export default FormChoiceAnswer;
 

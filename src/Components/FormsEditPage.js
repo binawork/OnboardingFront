@@ -4,13 +4,13 @@ import "../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
-import Navbar from "../Components/Navbar";
+import Navbar from "./Navbar";
 import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar";
-import FormOpenAnswer from "./FormOpenAnswer";
-import FormChoiceAnswer from "./FormChoiceAnswer";
-import FormMultiChoiceAnswer from "./FormMultiChoiceAnswer";
-import FormAddSection from "./FormAddSection";
+import FormOpenAnswer from "./FormsEdit/FormOpenAnswer";
+import FormChoiceAnswer from "./FormsEdit/FormChoiceAnswer";
+import FormMultiChoiceAnswer from "./FormsEdit/FormMultiChoiceAnswer";
+import FormAddSection from "./FormsEdit/FormAddSection";
 
 function FormsEditPage() {
 

@@ -1,10 +1,10 @@
 import React from "react";
 
-import "../static/looper/stylesheets/theme.min.css";
+import "../../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
-import Switcher from "./Switcher"
+import Switcher from "../Switcher"
 
 function FormOpenAnswer() {
 
