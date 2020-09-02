@@ -4,16 +4,23 @@ import "../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
-import Navbar from "./Navbar";
-import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar";
 import FormOpenAnswer from "./FormsEdit/FormOpenAnswer";
 import FormChoiceAnswer from "./FormsEdit/FormChoiceAnswer";
 import FormMultiChoiceAnswer from "./FormsEdit/FormMultiChoiceAnswer";
 import FormAddSection from "./FormsEdit/FormAddSection";
-
+import { formsEmployeeData } from "./FormsEdit/FormsEmployeeData.js";
 
 function FormsEmployeePage() {
+    var forms = [];
+    for(var i = 0; i < formsEmployeeData.length; i++){
+    	if(formsEmployeeData[i].type === "oa")
+    		forms.push(<div className="card-body"><FormOpenAnswer form = { formsEmployeeData[i] } key = { i } /></div>);
+    	else if(formsEmployeeData[i].type === "osa")
+    		forms.push(<div className="card-body"><FormChoiceAnswer form = { formsEmployeeData[i] } key = { i } /></div>);
+    	else if(formsEmployeeData[i].type === "msa")
+    		forms.push(<div className="card-body"><FormMultiChoiceAnswer form = { formsEmployeeData[i] } key = { i } /></div>);
+    }
 
     return(
     	<div className="app">
@@ -33,17 +40,7 @@ function FormsEmployeePage() {
     							<div className="card-header">
     							View content
     							</div>
-    									<div className="card-body">
-    										<FormOpenAnswer /> {/* placeholder */}
-    									</div>
-
-    									<div className="card-body">
-    										<FormChoiceAnswer /> {/* placeholder */}
-    									</div>
-
-    									<div className="card-body">
-    										<FormMultiChoiceAnswer /> {/* placeholder */}
-    									</div>
+    							{ forms }
     						</div>
     					</div>
     				</div>
