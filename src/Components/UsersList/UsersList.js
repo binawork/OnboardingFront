@@ -20,7 +20,7 @@ function UsersList(props) {
         <div className="page-section">
             <div className="card card-fluid">
                 <div className="card-header">
-                 Employees list
+                 Lista pracowników
                 </div>
                 <div className="card-body">
                     <UserListSearch />

@@ -8,7 +8,7 @@ function UserListSearch() {
             <div className="col">
                 <div className="has-clearable">
                     <button type="button" className="close" aria-label="Close"><span aria-hidden="true"><i className="fa fa-times-circle"></i></span></button>
-                    <input type="text" className="form-control" placeholder="Search" />
+                    <input type="text" className="form-control" placeholder="Szukaj" />
                 </div>
             </div>
             <div className="col-auto">
@@ -22,19 +22,19 @@ function UserListSearch() {
             <div className="col">
                 <div className="has-clearable">
                     <button type="button" className="close" aria-label="Close"><span aria-hidden="true"><i className="fa fa-times-circle"></i></span></button>
-                    <input type="text" className="form-control" placeholder="Department" />
+                    <input type="text" className="form-control" placeholder="Dział" />
                 </div>
             </div>
             <div className="col">
                 <div className="has-clearable">
                     <button type="button" className="close" aria-label="Close"><span aria-hidden="true"><i className="fa fa-times-circle"></i></span></button>
-                    <input type="text" className="form-control" placeholder="Position" />
+                    <input type="text" className="form-control" placeholder="Stanowisko" />
                 </div>
             </div>
             <div className="col">
                 <div className="has-clearable">
                     <button type="button" className="close" aria-label="Close"><span aria-hidden="true"><i className="fa fa-times-circle"></i></span></button>
-                    <input type="text" className="form-control" placeholder="Localization" />
+                    <input type="text" className="form-control" placeholder="Lokalizacja" />
                 </div>
             </div>
             <div className="col-auto">

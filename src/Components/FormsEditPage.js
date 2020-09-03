@@ -44,7 +44,7 @@ function FormsEditPage() {
     										</div>
     									</div>
     									<div className="form-group">
-    										<textarea className="form-control" placeholder="Description" rows="4"></textarea>
+    										<textarea className="form-control" placeholder="Opis" rows="4"></textarea>
     									</div>
     									<div className="form-group">
     										<div className="input-group-append">
