@@ -4,6 +4,7 @@ import "../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
+import NavbarEmployee from "./NavbarEmployee.js";
 import PageAddressBar from "./PageAddressBar";
 import FormOpenAnswer from "./FormsEdit/FormOpenAnswer";
 import FormChoiceAnswer from "./FormsEdit/FormChoiceAnswer";
@@ -24,7 +25,7 @@ function FormsEmployeePage() {
     return(
     	<div className="app">
     		<header className="app-header app-header-dark">
-    			{/* todo: add employee navbar; */}
+    			<NavbarEmployee />{/* placeholder; */}
     		</header>
 
     		<aside className="app-aside app-aside-expand-md app-aside-light"></aside>
@@ -32,7 +33,6 @@ function FormsEmployeePage() {
     		<main className="app-main">
 				<div className="wrapper"><div className="page has-sidebar-expand-xl">
 					<div className="page-inner">
-						<PageAddressBar page = { "Form title" } /> {/* placeholder */}
 
     					<div className="page-section">
     						<div className="card card-fluid">
