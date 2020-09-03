@@ -7,9 +7,9 @@ import "../static/looper/stylesheets/theme.min.css";
 import Navbar from "./Navbar";
 import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar";
-import FormOpenAnswer from "./FormsEdit/FormOpenAnswer";
-import FormChoiceAnswer from "./FormsEdit/FormChoiceAnswer";
-import FormMultiChoiceAnswer from "./FormsEdit/FormMultiChoiceAnswer";
+import FormOpenText from "./FormsEdit/FormOpenText";
+import FormChoiceEdit from "./FormsEdit/FormChoiceEdit";
+import FormMultiChoiceEdit from "./FormsEdit/FormMultiChoiceEdit";
 import FormAddSection from "./FormsEdit/FormAddSection";
 
 
@@ -65,15 +65,15 @@ function FormsEditPage() {
     							<div className="row">
     								<div className="col">
     									<div className="card-body">
-    										<FormOpenAnswer /> {/* placeholder */}
+    										<FormOpenText /> {/* placeholder */}
     									</div>
 
     									<div className="card-body">
-    										<FormChoiceAnswer /> {/* placeholder */}
+    										<FormChoiceEdit /> {/* placeholder */}
     									</div>
 
     									<div className="card-body">
-    										<FormMultiChoiceAnswer /> {/* placeholder */}
+    										<FormMultiChoiceEdit /> {/* placeholder */}
     									</div>
     								</div>
     								<div className="col-auto">

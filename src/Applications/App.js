@@ -1,7 +1,7 @@
 import React from 'react';
 import "../static/css/style.css";
 
-import Navbar from "../Components/Navbar";
+//import Navbar from "../Components/Navbar";
 //import UserListSearch from "../Components/UserListSearch";
 //import UserListRow from "../Components/UsersList/UserListRow";
 import DashboardPage from "../Components/DashboardPage";
@@ -11,9 +11,12 @@ import FormTablePage from "../Components/FormTable/FormTablePage";
 import AddUserTablePage from "../Components/AddUserTable/AddUserTablePage";
 import UserManagerProfilePage from "../Components/UserManagerProfilePage";
 
+import FormsEmployeePage from "../Components/FormsEmployeePage";
+import FormsManagerCheckPage from "../Components/FormsManagerCheckPage";
+
 function App() {
   return (
-      <AddUserTablePage />
+      <FormsManagerCheckPage />
   );
 }
 

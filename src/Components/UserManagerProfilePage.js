@@ -4,16 +4,12 @@ import "../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 
 import UserProfileManage from "./UserProfileManage";
-import Navbar from "../Components/Navbar";
+import Navbar from "./Navbar";
 import LeftMenu from "./LeftMenu";
 import PageAddressBar from "./PageAddressBar"
 
 function UserManagerProfilePage() {
-	const singleUser = {name: "Craig Hansen", email: "chansen@example.com", position: "Software Developer", department: "Foo Bar", localization: "Lorem Ipsum", sent: 4, finished: 2};
-	var allUsers = [], i;
-	for(i = 0; i < 5; i++){
-		allUsers.push(singleUser);
-	}
+	//const singleUser = {name: "Craig Hansen", email: "chansen@example.com", position: "Software Developer", department: "Foo Bar", localization: "Lorem Ipsum", sent: 4, finished: 2};
 
     return (
     	<div className="app">
