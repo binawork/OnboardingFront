@@ -22,7 +22,7 @@ function FormsEditPage() {
     		</header>
     		<LeftMenu /> {/* placeholder */}
     		<main className="app-main">
-				<div className="wrapper"><div className="page has-sidebar">
+				<div className="wrapper"><div className="page has-sidebar-expand-xl">
 					<div className="page-inner">
 						<PageAddressBar page = { "Page 1" } /> {/* placeholder */}
 
@@ -39,17 +39,16 @@ function FormsEditPage() {
     										</div>
     									</div>
     									<div className="form-group">
-    										<div className="custom-file">
-    											<input type="file" className="custom-file-input" id="docFile" multiple="" />
-    											<label className="custom-file-label" for="docFile">Add video url/doc etc.</label>
+    										<div className="input-group">
+    											<input type="text" className="form-control" placeholder="Add video url/doc etc." value="" />
     										</div>
     									</div>
     									<div className="form-group">
-    										<textarea className="form-control" placeholder="Description" rows="4"></textarea>
+    										<textarea className="form-control" placeholder="Opis" rows="4"></textarea>
     									</div>
     									<div className="form-group">
     										<div className="input-group-append">
-    											<button className="btn btn-secondary" style={{color: '#000'}}>Save</button>
+    											<button className="btn btn-secondary" style={{color: '#000'}}>Zapisz</button>
     										</div>
     									</div>
     								</form>

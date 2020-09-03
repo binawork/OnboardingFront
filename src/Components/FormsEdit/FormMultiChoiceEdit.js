@@ -16,11 +16,11 @@ function FormMultiChoiceEdit() {
                   <form> {/* form placeholder */}
                     <div className="form-group">
                         <div className="input-group">
-                            <input type="text" className="form-control" placeholder="Title" value="" />
+                            <input type="text" className="form-control" placeholder="Tytuł" value="" />
                         </div>
                     </div>
                     <div className="form-group">
-                        <textarea className="form-control" placeholder="Description (markdown)" rows="4"></textarea>
+                        <textarea className="form-control" placeholder="Opis (markdown)" rows="4"></textarea>
                     </div>
                     <hr />
                     <table className="table table-hover"><tbody>

@@ -20,22 +20,22 @@ function UserListRow(props) {
 
                     <div className="col">
                         <h3 className="card-title">
-                            <small className="text-muted">Department:</small> { props.user.department }
+                            <small className="text-muted">Dział:</small> { props.user.department }
                         </h3>
                         <h3 className="card-title">
-                            <small className="text-muted">Localization:</small> { props.user.localization }
+                            <small className="text-muted">Lokalizacja:</small> { props.user.localization }
                         </h3>
                     </div>
 
                     <div className="col-auto">
                         <h3 className="card-title">
-                            <small className="text-muted">Packages sent:</small> { props.user.sent }
+                            <small className="text-muted">Wysłane formularze:</small> { props.user.sent }
                         </h3>
                         <h3 className="card-title">
-                            <small className="text-muted">Finished Packages:</small> { props.user.finished }
+                            <small className="text-muted">Skończone formularze:</small> { props.user.finished }
                         </h3>
-                        <button type="button" className="btn btn-secondary" data-toggle="tooltip" style={{color: '#000'}}>Edit Profile</button>
-                        <button type="button" className="btn btn-secondary" data-toggle="tooltip" style={{color: '#000'}}>Add "package"</button>
+                        <button type="button" className="btn btn-secondary" data-toggle="tooltip" style={{color: '#000'}}>Edytuj profil</button>
+                        <button type="button" className="btn btn-secondary" data-toggle="tooltip" style={{color: '#000'}}>Dodaj "package"</button>
                     </div>
                 </div>
             </div>

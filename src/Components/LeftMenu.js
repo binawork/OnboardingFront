@@ -24,7 +24,7 @@ function LeftMenu() {
                                     <a href="#" className="menu-link">Lista formularzy wdrożeń</a>
                                 </li>
                                 <li className="menu-item">
-                                    <a href="#" className="menu-link">- add user</a>
+                                    <a href="#" className="menu-link">- dodaj pracownika</a>
                                 </li>
                             </ul>
                         </li>
@@ -33,7 +33,7 @@ function LeftMenu() {
                             <a href="#" className="menu-link"><span className="menu-icon fas fa-file"></span> <span className="menu-text">Add new user</span></a>
                         </li>
                         <li className="menu-item">
-                            <a href="#" className="menu-link"><span className="menu-icon fas fa-file"></span> <span className="menu-text">Users list</span></a>
+                            <a href="#" className="menu-link"><span className="menu-icon fas fa-file"></span> <span className="menu-text">Lista pracowników</span></a>
                         </li>
                       </ul>
 
