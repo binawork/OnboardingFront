@@ -42,6 +42,9 @@ function FormsManagerCheckPage() {
     							View content
     							</div>
     							<div className="card-body">Description</div>
+    							<div className="card-body">
+    							<iframe src="https://www.youtube.com/embed/y0UAIIWdevg" frameBorder='0' allow='autoplay; encrypted-media' allowFullScreen title="video" />
+    							</div>
     							{ forms }
     						</div>
     					</div>
