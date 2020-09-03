@@ -34,17 +34,21 @@ function FormsManagerCheckPage() {
     		<main className="app-main">
 				<div className="wrapper"><div className="page has-sidebar-expand-xl">
 					<div className="page-inner">
-						<PageAddressBar page = { "Form title" } /> {/* placeholder */}
+						<PageAddressBar page = { "tytuł formularza" } /> {/* placeholder */}
 
     					<div className="page-section">
     						<div className="card card-fluid">
     							<div className="card-header">
     							View content
     							</div>
-    							<div className="card-body">Description</div>
+    							<div className="card-body">Opis lorem ipsum</div>
+
     							<div className="card-body">
-    							<iframe src="https://www.youtube.com/embed/y0UAIIWdevg" frameBorder='0' allow='autoplay; encrypted-media' allowFullScreen title="video" />
+    								<div className="embed-responsive embed-responsive-21by9">
+    									<iframe className="embed-responsive-item" src="https://www.youtube.com/embed/y0UAIIWdevg" allow='autoplay; encrypted-media' allowFullScreen title="video" />
+    								</div>
     							</div>
+
     							{ forms }
     						</div>
     					</div>

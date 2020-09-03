@@ -32,8 +32,8 @@ function Navbar() {
                 </ul>
                     <div className="my-2 my-lg-0 col-6 p-0">
                         <form className="form-inline">
-                            <input className="form-control mr-sm-2 col-9" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-outline-success my-2 my-sm-0 col-2 float-left" type="submit">Search</button>
+                            <input className="form-control mr-sm-2 col-9" type="search" placeholder="Szukaj" aria-label="Search"/>
+                            <button className="btn btn-outline-success my-2 my-sm-0 col-2 float-left" type="submit">Szukaj</button>
                         </form>
                     </div>
                     <div className="ml-4">

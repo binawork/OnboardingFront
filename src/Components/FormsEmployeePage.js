@@ -39,7 +39,14 @@ function FormsEmployeePage() {
     							<div className="card-header">
     							View content
     							</div>
-    							<div className="card-body">Description</div>
+    							<div className="card-body">Opis lorem ipsum ...</div>
+
+    							<div className="card-body">
+    								<div className="embed-responsive embed-responsive-21by9">
+    									<iframe className="embed-responsive-item" src="https://www.youtube.com/embed/y0UAIIWdevg" allow='autoplay; encrypted-media' allowFullScreen title="video" />
+    								</div>
+    							</div>
+
     							{ forms }
     						</div>
     					</div>
