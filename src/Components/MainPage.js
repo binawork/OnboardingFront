@@ -115,8 +115,7 @@ function MainPage() {
                                 firmie czuli się jej częścią, zwiększ jakość wdrażania nowych pracowników oraz
                                 przyspiesz ten proces!
                             </p><a
-                            href="#" className="btn
-              btn-subtle-primary">Doziedz się więcej</a>
+                            href="#" className="btn btn-subtle-primary">Dowiedz się więcej</a>
                         </div>
                     </div>
                 </div>
@@ -171,8 +170,7 @@ function MainPage() {
                                         <p className="text-muted font-size-lg"> Dzięki intuicyjnemu interfejsowi i
                                             prostemu procesowi
                                             umieszczania informacji w formularzach onboardingowych zaczniesz szybko
-                                            wdrażąc nowych
-                                            pracowników</p>
+                                            wdrażać nowych pracowników</p>
                                     </div>
                                 </div>
                             </div>
@@ -275,9 +273,8 @@ function MainPage() {
                                     <h3 className="display-3 text-center">
                                         <sup><small>zł</small></sup>49<small><small/></small>
                                     </h3>
-                                    <p className="text-center text-muted mb-5"> Jeżeli nie zatródniasz nowyh pracowników
-                                        regularnie możesz
-                                        wykupić potrzebną liczbę wdrożeń dla nowyh pracowników </p>
+                                    <p className="text-center text-muted mb-5"> Jeżeli nie zatrudniasz nowyh pracowników
+                                        regularnie możesz wykupić potrzebną liczbę wdrożeń dla nowyh pracowników </p>
                                     <ul className="list-icons">
                                         <li className="mb-2 pl-1">
                       <span className="list-icon"><img className="mr-2" src="../static/looper/images/check.svg"
@@ -326,8 +323,7 @@ function MainPage() {
                                         <sup><small>zł</small></sup>1999<small><small> </small>/miesiąc</small>
                                     </h3>
                                     <p className="text-center text-muted-light mb-5"> Miesięczna subskrybcja idealna dla
-                                        film
-                                        zatródnijących comiesiąc wielu pracowników </p>
+                                        film zatrudnijących co miesiąc wielu pracowników </p>
                                     <ul className="list-icons">
                                         <li className="mb-2 pl-1">
                       <span className="list-icon"><img className="mr-2" src="../static/looper/images/check.svg"
@@ -336,7 +332,7 @@ function MainPage() {
                                         </li>
                                         <li className="mb-2 pl-1">
                       <span className="list-icon"><img className="mr-2" src="../static/looper/images/check.svg"
-                                                       alt="" width="16"/></span> Jedna faktóra miesięcznie
+                                                       alt="" width="16"/></span> Jedna faktura miesięcznie
                                         </li>
                                         <li className="mb-2 pl-1">
                       <span className="list-icon"><img className="mr-2" src="../static/looper/images/check.svg"

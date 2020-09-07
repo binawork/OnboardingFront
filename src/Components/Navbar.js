@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
     return(
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="top-bar navbar navbar-expand-lg navbar-light bg-light">
             <a className="navbar-brand">Online Onboarding</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -32,8 +32,8 @@ function Navbar() {
                 </ul>
                     <div className="my-2 my-lg-0 col-6 p-0">
                         <form className="form-inline">
-                            <input className="form-control mr-sm-2 col-9" type="search" placeholder="Search" aria-label="Search"/>
-                            <button className="btn btn-outline-success my-2 my-sm-0 col-2 float-left" type="submit">Search</button>
+                            <input className="form-control mr-sm-2 col-9" type="search" placeholder="Szukaj" aria-label="Search"/>
+                            <button className="btn btn-outline-success my-2 my-sm-0 col-2 float-left" type="submit">Szukaj</button>
                         </form>
                     </div>
                     <div className="ml-4">
@@ -46,3 +46,4 @@ function Navbar() {
     )
 }
 export default Navbar;
+
