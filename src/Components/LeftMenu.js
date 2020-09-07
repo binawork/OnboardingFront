@@ -2,6 +2,7 @@ import React from "react";
 import ModeButton from './ModeButton'
 //import Contact from "./Contact";
 
+
 function LeftMenu() {
     return(
         <aside className="app-aside app-aside-expand-md app-aside-light">
