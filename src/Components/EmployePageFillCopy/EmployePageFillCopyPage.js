@@ -1,24 +1,19 @@
 import React from "react";
-import Navbar from "../Navbar";
-import LeftMenu from "../LeftMenu";
-import PageAddressBar from "../PageAddressBar";
-import FormTable from "./FormTable";
-import FormTableSearch from "./FormTableSearch";
+import NavbarEmployee from "../NavbarEmployee";
+import EmployePageFillTable from "./EmployePageFillTable";
 
-function FormTablePage() {
+function EmployePageFillCopyPage() {
 
     return(
         <div className="app">
             <header className="app-header app-header-dark">
-                <Navbar />
+                <NavbarEmployee />
             </header>
-            <LeftMenu />
             <main className="app-main">
                 <div className="wrapper">
                     <div className="page">
                         <div className="page-inner">
-                            <PageAddressBar page = { "Accounts" } />
-                            <FormTable />
+                            <EmployePageFillTable />
                         </div>
                     </div>
                 </div>
@@ -26,4 +21,4 @@ function FormTablePage() {
         </div>
     )
 }
-export default FormTablePage;
+export default EmployePageFillCopyPage;

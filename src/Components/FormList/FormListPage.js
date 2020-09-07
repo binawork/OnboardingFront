@@ -2,10 +2,9 @@ import React from "react";
 import Navbar from "../Navbar";
 import LeftMenu from "../LeftMenu";
 import PageAddressBar from "../PageAddressBar";
-import FormTable from "./FormTable";
-import FormTableSearch from "./FormTableSearch";
+import FormTable from "../FormTable/FormTable";
 
-function FormTablePage() {
+function FormListPage() {
 
     return(
         <div className="app">
@@ -26,4 +25,4 @@ function FormTablePage() {
         </div>
     )
 }
-export default FormTablePage;
+export default FormListPage;

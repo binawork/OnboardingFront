@@ -13,10 +13,12 @@ import UserManagerProfilePage from "../Components/UserManagerProfilePage";
 
 import FormsEmployeePage from "../Components/FormsEmployeePage";
 import FormsManagerCheckPage from "../Components/FormsManagerCheckPage";
+import EmployeProfilePage from "../Components/EmployeProfile/EmployeProfilePage";
+import EmployePageFillCopyPage from "../Components/EmployePageFillCopy/EmployePageFillCopyPage";
 
 function App() {
   return (
-      <FormsManagerCheckPage />
+      <EmployeProfilePage />
   );
 }
 

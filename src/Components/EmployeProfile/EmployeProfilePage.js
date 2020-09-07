@@ -2,10 +2,9 @@ import React from "react";
 import Navbar from "../Navbar";
 import LeftMenu from "../LeftMenu";
 import PageAddressBar from "../PageAddressBar";
-import FormTable from "./FormTable";
-import FormTableSearch from "./FormTableSearch";
+import EmployeProfileTable from "./EmployeProfileTable";
 
-function FormTablePage() {
+function EmployeProfilePage() {
 
     return(
         <div className="app">
@@ -18,7 +17,7 @@ function FormTablePage() {
                     <div className="page">
                         <div className="page-inner">
                             <PageAddressBar page = { "Accounts" } />
-                            <FormTable />
+                            <EmployeProfileTable />
                         </div>
                     </div>
                 </div>
@@ -26,4 +25,4 @@ function FormTablePage() {
         </div>
     )
 }
-export default FormTablePage;
+export default EmployeProfilePage;
