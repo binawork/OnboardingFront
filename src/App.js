@@ -13,7 +13,7 @@ import AddUserTablePage from "./Components/AddUserTable/AddUserTablePage";
 import UserManagerProfilePage from "./Components/UserManagerProfilePage";
 
 import FormsEmployeePage from "./Components/FormsEmployeePage";
-import FormsManagerCheckPage from "./Components/FormsManagerCheckPage";
+import FormsManagerCheckPage from "./Components/FormsManagerCheckPage";// where manager checks how form was filled;
 import EmployeProfilePage from "./Components/EmployeProfile/EmployeProfilePage";
 import EmployePageFillCopyPage from "./Components/EmployePageFillCopy/EmployePageFillCopyPage";
 import Navbar from "./Components/Navbar";
@@ -29,6 +29,7 @@ function App() {
             <Route path="/form_edit" component={ FormsEditPage } />
             <Route path="/form_table" component={ FormTablePage } />
             <Route path="/user_list" component={ UserListPage } />
+            <Route path="/packages" component={ AddUserTablePage } />
             <Route path="/" exact component={ DashboardPage } />
 
         </BrowserRouter>
