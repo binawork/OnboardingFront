@@ -23,12 +23,13 @@ function App() {
         <BrowserRouter>
             <Route path="/profile/manager" component={ UserManagerProfilePage } />
             <Route path="/profile/employee" component={ EmployeProfilePage } />
-            <Route path="/add_user" component={ EmployePageFillCopyPage } />
-            <Route path="/employe_page_fill" component={ EmployeProfilePage } />
+            <Route path="/add_user" component={ UserManagerProfilePage } />
+            <Route path="/employe_page_fill" component={ FormsEmployeePage } />
+            <Route path="/employe_forms_list" component={ EmployePageFillCopyPage } />
             <Route path="/form_edit" component={ FormsEditPage } />
             <Route path="/form_table" component={ FormTablePage } />
             <Route path="/user_list" component={ UserListPage } />
-            <Route path="/" component={ DashboardPage } />
+            <Route path="/" exact component={ DashboardPage } />
 
         </BrowserRouter>
     );
