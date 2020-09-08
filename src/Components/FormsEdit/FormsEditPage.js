@@ -1,16 +1,16 @@
 import React from "react";
 
-import "../static/looper/stylesheets/theme.min.css";
+import "../../static/looper/stylesheets/theme.min.css";
 //import "../static/looper/stylesheets/theme-dark.min.css";
 //import "../static/looper/vendor/fontawesome/all.min.css";
 
-import Navbar from "./Navbar";
-import LeftMenu from "./LeftMenu";
-import PageAddressBar from "./PageAddressBar";
-import FormOpenText from "./FormsEdit/FormOpenText";
-import FormChoiceEdit from "./FormsEdit/FormChoiceEdit";
-import FormMultiChoiceEdit from "./FormsEdit/FormMultiChoiceEdit";
-import FormAddSection from "./FormsEdit/FormAddSection";
+import Navbar from "../Navbar";
+import LeftMenu from "../LeftMenu";
+import PageAddressBar from "../PageAddressBar";
+import FormOpenText from "./FormOpenText";
+import FormChoiceEdit from "./FormChoiceEdit";
+import FormMultiChoiceEdit from "./FormMultiChoiceEdit";
+import FormAddSection from "./FormAddSection";
 
 
 function FormsEditPage() {
