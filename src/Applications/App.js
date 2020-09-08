@@ -1,5 +1,6 @@
 import React from 'react';
 import "../static/css/style.css";
+//import { BrowserRouter, Route } from 'react-router-dom';
 
 //import Navbar from "../Components/Navbar";
 //import UserListSearch from "../Components/UserListSearch";
@@ -18,7 +19,15 @@ import EmployePageFillCopyPage from "../Components/EmployePageFillCopy/EmployePa
 
 function App() {
   return (
-      <EmployeProfilePage />
+      <>
+      {/*<BrowserRouter>
+        <Route path="/profile" component={ UserManagerProfilePage } />
+        <Route path="/users" component={ UserListPage } />
+        <Route path="/create-page" component={ FormsEditPage } />
+        <Route path="/employee/:formid/:pageid/answers" component={ FormsManagerCheckPage } />*/}
+      <DashboardPage />
+      {/*</BrowserRouter>*/}
+      </>
   );
 }
 

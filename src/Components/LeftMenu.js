@@ -1,6 +1,6 @@
 import React from "react";
 import ModeButton from './ModeButton'
-//import Contact from "./Contact";
+//import { Link } from 'react-router-dom';
 
 
 function LeftMenu() {
@@ -32,9 +32,11 @@ function LeftMenu() {
 
                         <li className="menu-item">
                             <a href="#" className="menu-link"><span className="menu-icon fas fa-file"></span> <span className="menu-text">Add new user</span></a>
+                            {/*<Link to='/profile'><span className="menu-icon fas fa-file"></span> <span className="menu-text">Add new user</span></Link>*/}
                         </li>
                         <li className="menu-item">
                             <a href="#" className="menu-link"><span className="menu-icon fas fa-file"></span> <span className="menu-text">Lista pracowników</span></a>
+                            {/*<Link to='/users'><span className="menu-icon fas fa-file"></span> <span className="menu-text">Lista pracowników</span></Link>*/}
                         </li>
                       </ul>
 
