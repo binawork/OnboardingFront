@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 function PageAddressBar(props) {
     return(
@@ -10,7 +10,7 @@ function PageAddressBar(props) {
                     <hr />
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item">
-                            <a href="#">Home</a>
+                            <Link to='/'>Home</Link>
                         </li>
                         <li className="breadcrumb-item active">{ props.page }</li>
                     </ol>
