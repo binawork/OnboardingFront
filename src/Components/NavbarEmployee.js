@@ -2,7 +2,7 @@ import React from "react";
 
 function NavbarEmployee() {
     return(
-      <nav className="top-bar navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="top-bar navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="top-bar-brand"><a className="navbar-brand" style={{ color:"#000" }}>Online Onboarding</a></div>
         
         <div className="top-bar-list" id="navbarSupportedContent">
