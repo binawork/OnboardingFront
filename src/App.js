@@ -27,7 +27,7 @@ function App() {
             <Route path="/employe_page_fill" component={ FormsEmployeePage } />
             <Route path="/employe_forms_list" component={ EmployePageFillCopyPage } />
             <Route path="/form_edit" component={ FormsEditPage } />
-            <Route path="/form_table" component={ FormTablePage } />
+            <Route path="/package_page" component={ FormTablePage } />
             <Route path="/user_list" component={ UserListPage } />
             <Route path="/packages" component={ AddUserTablePage } />
             <Route path="/" exact component={ DashboardPage } />
