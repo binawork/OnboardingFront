@@ -30,17 +30,30 @@ function Navbar() {
                         </div>
                     </li>
                 </ul>
-                    <div className="my-2 my-lg-0 col-6 p-0">
-                        <form className="form-inline">
-                            <input className="form-control mr-sm-2 col-9" type="search" placeholder="Szukaj" aria-label="Search"/>
-                            <button className="btn btn-outline-success my-2 my-sm-0 col-2 float-left" type="submit">Szukaj</button>
-                        </form>
+                <div className="my-2 my-lg-0 col-6 p-0">
+                    <form className="form-inline">
+                        <input className="form-control mr-sm-2 col-9" type="search" placeholder="Szukaj" aria-label="Search"/>
+                        <button className="btn btn-outline-success my-2 my-sm-0 col-2 float-left" type="submit">Szukaj</button>
+                    </form>
+                </div>
+                {/*<div className="ml-4">
+                    <div className="form-inline my-2 my-lg-0">
+                        <p><em>Witaj #login</em></p>
                     </div>
-                    <div className="ml-4">
-                        <div className="form-inline my-2 my-lg-0">
-                            <p><em>Witaj #login</em></p>
+                </div>*/}
+            </div>
+            <div className="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
+                <div className="dropdown d-flex">
+                    <div className="form-inline my-2 my-lg-0">
+                        <button className="btn-account d-none d-md-flex" type="button" data-toggle="dropdown"><p><em>Witaj #login</em></p></button>
+                        <div className="dropdown-menu">
+                            <div className="dropdown-arrow ml-3"></div>
+                            <h6 className="dropdown-header d-none d-md-block d-lg-none">    </h6>
+                            <a className="dropdown-item" href="#"><span className="dropdown-icon oi oi-person"></span> Profile</a> <a className="dropdown-item" href="#"><span className="dropdown-icon oi oi-account-logout"></span> Logout</a>
+                            <div className="dropdown-divider"></div>
                         </div>
                     </div>
+                </div>
             </div>
         </nav>
     )
