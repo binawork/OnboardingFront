@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return(
@@ -48,8 +49,9 @@ function Navbar() {
                         <button className="btn-account d-none d-md-flex" type="button" data-toggle="dropdown"><p><em>Witaj #login</em></p></button>
                         <div className="dropdown-menu">
                             <div className="dropdown-arrow ml-3"></div>
-                            <h6 className="dropdown-header d-none d-md-block d-lg-none">    </h6>
-                            <a className="dropdown-item" href="#"><span className="dropdown-icon oi oi-person"></span> Profile</a> <a className="dropdown-item" href="#"><span className="dropdown-icon oi oi-account-logout"></span> Logout</a>
+                            <h6 className="dropdown-header d-none d-md-block d-lg-none">  user.get_username  </h6>
+                            <Link className="dropdown-item" to="/profile/employee"><span className="dropdown-icon oi oi-person"></span> Profile</Link>
+                            <a className="dropdown-item" href="#"><span className="dropdown-icon oi oi-account-logout"></span> Logout</a>
                             <div className="dropdown-divider"></div>
                         </div>
                     </div>
