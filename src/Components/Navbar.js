@@ -46,12 +46,12 @@ function Navbar() {
             <div className="top-bar-item top-bar-item-right px-0 d-none d-sm-flex">
                 <div className="dropdown d-flex">
                     <div className="form-inline my-2 my-lg-0">
-                        <button className="btn-account d-none d-md-flex" type="button" data-toggle="dropdown"><p><em>Witaj #login</em></p></button>
+                        <button className="btn-account d-none d-md-flex" type="button" data-toggle="dropdown"><p><em>Witaj username #login</em></p></button>
                         <div className="dropdown-menu">
                             <div className="dropdown-arrow ml-3"></div>
-                            <h6 className="dropdown-header d-none d-md-block d-lg-none">  user.get_username  </h6>
+                            {/*<h6 className="dropdown-header d-none d-md-block d-lg-none">  user username</h6> */}
                             <Link className="dropdown-item" to="/profile/employee"><span className="dropdown-icon oi oi-person"></span> Profile</Link>
-                            <a className="dropdown-item" href="#"><span className="dropdown-icon oi oi-account-logout"></span> Logout</a>
+                            <a className="dropdown-item" href={process.env.PUBLIC_URL+"/accounts/logout/"}><span className="dropdown-icon oi oi-account-logout"></span> Logout</a>
                             <div className="dropdown-divider"></div>
                         </div>
                     </div>
