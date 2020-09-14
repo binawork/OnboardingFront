@@ -11,12 +11,12 @@ function UserProfileManage() {
         <form>
             <div className="form-group">
                 <div className="input-group">
-                    <input type="text" className="form-control" placeholder="First name" value="" />
+                    <input type="text" className="form-control" placeholder="Imie" value="" />
                 </div>
             </div>
             <div className="form-group">
                 <div className="input-group">
-                    <input type="text" className="form-control" placeholder="Last name" value="" />
+                    <input type="text" className="form-control" placeholder="Nazwisko" value="" />
                 </div>
             </div>
             <hr />
@@ -37,7 +37,7 @@ function UserProfileManage() {
             </div>
             <div className="form-group">
                 <div className="input-group">
-                    <input type="text" className="form-control" placeholder="Localization" value="" />
+                    <input type="text" className="form-control" placeholder="Localizacja" value="" />
                 </div>
             </div>
             <div className="form-group">
