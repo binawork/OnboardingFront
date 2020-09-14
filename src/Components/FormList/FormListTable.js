@@ -3,7 +3,7 @@ import PackagesAddNew from "./PackagesAddNew";
 import PackagesRow from "./PackagesRow";
 import { formDataList } from "../FormTable/FormTableData";
 
-function FormTable() {
+function FormListTable() {
     let form_table= [];
     if (formDataList) {
         formDataList.forEach(function (element) {
@@ -42,4 +42,5 @@ function FormTable() {
         </div>
     )
 }
-export default FormTable;
+export default FormListTable;
+
