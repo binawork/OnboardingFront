@@ -17,7 +17,6 @@ import FormsEmployeePage from "./Components/FormsEmployeePage";
 import FormsManagerCheckPage from "./Components/FormsManagerCheckPage";// where manager checks how form was filled;
 import EmployeProfilePage from "./Components/EmployeProfile/EmployeProfilePage";
 import EmployePageFillCopyPage from "./Components/EmployePageFillCopy/EmployePageFillCopyPage";
-import Navbar from "./Components/Navbar";
 
 function App() {
     return (
@@ -33,7 +32,6 @@ function App() {
             <Route path="/user_list" component={ UserListPage } />
             <Route path="/form_list" component={ AddUserTablePage } />
             <Route path="/" exact component={ DashboardPage } />
-
         </BrowserRouter>
     );
 }

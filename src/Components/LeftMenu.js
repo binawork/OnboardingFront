@@ -31,7 +31,7 @@ function LeftMenu() {
                         </li>
 
                         <li className="menu-item">
-                            <Link to='/add_user' className="menu-link"><span className="menu-icon fas fa-file"></span> <span className="menu-text">Add new user</span></Link>
+                            <Link to='/add_user' className="menu-link"><span className="menu-icon fas fa-file"></span> <span className="menu-text">Dodaj pracownika</span></Link>
                         </li>
                         <li className="menu-item">
                             <Link to='/user_list' className="menu-link"><span className="menu-icon fas fa-file"></span> <span className="menu-text">Lista pracowników</span></Link>
@@ -68,11 +68,10 @@ function LeftMenu() {
                             <Link to="/user_list" className="menu-link"> UserList</Link>
                         </li>
                         <li className="menu-item">
-                            <Link to="/packages" className="menu-link"> AddUserTable </Link>
+                            <Link to="/packages" className="menu-link"> FormList </Link>
                         </li>
                         <li className="menu-item">
-                           <Link to="/form_list" className="menu-link"> FormList </Link>
-
+                           <Link to="/form_list" className="menu-link"> AddUserTable </Link>
                         </li>
 
                         <li className="menu-item">

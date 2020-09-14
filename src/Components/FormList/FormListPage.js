@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import LeftMenu from "../LeftMenu";
 import PageAddressBar from "../PageAddressBar";
-import FormTable from "./FormTable";
+import FormListTable from "./FormListTable";
 
 function FormListPage() {
 
@@ -16,8 +16,8 @@ function FormListPage() {
                 <div className="wrapper">
                     <div className="page">
                         <div className="page-inner">
-                            <PageAddressBar page = { "Accounts" } />
-                            <FormTable />
+                            <PageAddressBar page = { "Packages" } />
+                            <FormListTable />
                         </div>
                     </div>
                 </div>
