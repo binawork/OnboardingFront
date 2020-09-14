@@ -25,7 +25,7 @@ function LeftMenu() {
                                     <Link to="/package_page" className="menu-link">Lista formularzy</Link>
                                 </li>
                                 <li className="menu-item">
-                                    <Link to="/packages" className="menu-link">- wyślij pracownikowi</Link>
+                                    <Link to="/form_list" className="menu-link">- wyślij pracownikowi</Link>
                                 </li>
                             </ul>
                         </li>
@@ -69,6 +69,10 @@ function LeftMenu() {
                         </li>
                         <li className="menu-item">
                             <Link to="/packages" className="menu-link"> AddUserTable </Link>
+                        </li>
+                        <li className="menu-item">
+                           <Link to="/form_list" className="menu-link"> FormList </Link>
+
                         </li>
 
                         <li className="menu-item">
