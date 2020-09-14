@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import LeftMenu from "../LeftMenu";
 import PageAddressBar from "../PageAddressBar";
-import FormTable from "../FormTable/FormTable";
+import FormTable from "./FormTable";
 
 function FormListPage() {
 
