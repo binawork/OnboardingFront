@@ -38,7 +38,7 @@ function LeftMenu() {
                         </li>
                       </ul>
 
-                      <ul className="menu">
+                      {/*<ul className="menu">
                         <li className="menu-header">
                             <span className="menu-icon fas fa-home"></span> <span className="menu-text">Components</span>
                         </li>
@@ -80,7 +80,7 @@ function LeftMenu() {
                         <li className="menu-item">
                             <Link to="/employe_page_fill" className="menu-link"> FormsEmployee</Link>
                         </li>
-                      </ul>
+                      </ul>*/}
                     </nav>
                 </div>
                 <ModeButton />
