@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PackagesAddNew from "./PackagesAddNew";
 import PackagesRow from "./PackagesRow";
 import { formDataList } from "../FormTable/FormTableData";
 
+function getPath(){
+	var url = "";
+	if(!window.location.origin){
+		url = window.location.protocol +"//"+ window.location.host;
+	} else url = window.location.origin;
+
+	if(url===null || !(url) || (typeof url==='string' && url=='null')) url="";
+	let rrs=/\/$/.test(url);
+	if(!rrs) url=url+"/";
+	return url;
+}
+
 function FormListTable() {
-    let form_table= [];
+	var [rows , setRows] = useState([]);
+	let form_table= [], url = "http://localhost:8000/";// getPath();
+	let fetchProps = {method:"GET", headers:{"Accept":"application/json", "Content-Type":"application/json", "X-CSRFToken":"", 'Access-Control-Allow-Origin':'http://localhost:8000'}};
+
+	form_table.push(<PackagesRow row={ {name: "Loading ...", last_edit: ""} }/>);
+
+	useEffect(() => {
+		fetch(url + "api/package/", fetchProps).then(res => {console.log(res);res.json()}).then(
+			(result) => {
+				console.log(result);
+			},
+			(error) => {
+				console.log(error);
+			}
+		);
+	});
+
     if (formDataList) {
         formDataList.forEach(function (element) {
             form_table.push(<PackagesRow row={element}/>)
