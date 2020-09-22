@@ -2,40 +2,32 @@ import React, { useState, useEffect } from "react";
 import PackagesAddNew from "./PackagesAddNew";
 import PackagesRow from "./PackagesRow";
 import { formDataList } from "../FormTable/FormTableData";
+import { getPath } from "../utils.js";
 
-function getPath(){
-	var url = "";
-	if(!window.location.origin){
-		url = window.location.protocol +"//"+ window.location.host;
-	} else url = window.location.origin;
-
-	if(url===null || !(url) || (typeof url==='string' && url=='null')) url="";
-	let rrs=/\/$/.test(url);
-	if(!rrs) url=url+"/";
-	return url;
-}
 
 function FormListTable() {
-	var [rows , setRows] = useState([]);
-	let form_table= [], url = "http://localhost:8000/";// getPath();
-	let fetchProps = {method:"GET", headers:{"Accept":"application/json", "Content-Type":"application/json", "X-CSRFToken":"", 'Access-Control-Allow-Origin':'http://localhost:8000'}};
-
-	form_table.push(<PackagesRow row={ {name: "Loading ...", last_edit: ""} }/>);
+	var [rows , setRows] = useState([]),
+		[loaded, isLoaded] = useState(false);
+	let form_table= [], url = getPath();
+	let fetchProps = {method:"GET", headers:{"Accept":"application/json", "Content-Type":"application/json", "X-CSRFToken":""}};
 
 	useEffect(() => {
-		fetch(url + "api/package/", fetchProps).then(res => {console.log(res);res.json()}).then(
+		fetch(url + "api/package/", fetchProps).then(res => res.json()).then(
 			(result) => {
-				console.log(result);
+				isLoaded(true);
+				setRows(result);
 			},
 			(error) => {
 				console.log(error);
 			}
 		);
-	});
+	}, []);
 
-    if (formDataList) {
-        formDataList.forEach(function (element) {
-            form_table.push(<PackagesRow row={element}/>)
+    if(!loaded){
+		form_table.push(<PackagesRow key={0} row={ {name: "Loading ...", last_edit: ""} }/>);
+    } else {
+        rows.forEach(function (element) {
+            form_table.push(<PackagesRow key = { element.id } row={ {name: element['title'], last_edit:element['updated_on']} }/>)
         });
     }
     return(
